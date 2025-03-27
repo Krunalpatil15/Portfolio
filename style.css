@@ -1,0 +1,453 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', 'sans-serif';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.nav {
+    height: 90px;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px; 
+}
+
+.nav h3 a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.page2 {
+    display: flex;
+    gap: 50px;
+}
+
+.page2 h3 a {
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.page2 h3 a:hover {
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+
+/* Home Section */
+.home {
+    height: 400px;
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.MyImage {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.line1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    max-width: 600px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.light-mode .intro {
+    color: black;
+}
+
+/* Button */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.mybtn {
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.mybtn:hover {
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.light-mode .mybtn {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.light-mode .mybtn:hover {
+    background-color: rgb(61, 60, 60);
+    cursor: pointer;
+}
+
+/* Projects Section */
+.projects {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.box {
+    height: 380px;
+    width: 320px;
+    padding: 15px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden; 
+    position: relative;
+    text-align: center;
+}
+
+.box img {
+    max-width: 100%; 
+    max-height: 190px;
+    border-radius: 20px;
+    object-fit: contain; 
+    margin-top: 30px; 
+}
+
+.box h3 {
+    margin-top: 20px; 
+    color: white;
+    position: absolute;
+    top: 20px;
+}
+
+.light-mode .projects {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .box {
+    border: 2px solid black;
+}
+
+/* Education Section */
+.education {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10%;
+}
+
+.education .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.education .box img {
+    max-width: 100%;
+    max-height: 180px;
+    border-radius: 20px;
+    object-fit: contain;
+    margin-top: 30px;
+}
+
+.light-mode .education {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .box {
+    border: 2px solid black;
+}
+
+/* Skills Section */
+.skills {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 160px 10%;
+}
+
+.skills h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-list li {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.skill-list li:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+.light-mode .skill-list li {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.light-mode .skill-list li:hover {
+    background-color: #ddd;
+}
+
+/* Sports Achievements Section */
+.sports {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.sports-header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.handball-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+.sports h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.achievement {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.achievement:hover {
+    transform: translateY(-10px);
+    background-color: rgba(85, 85, 85, 0.8);
+}
+
+.achievement h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.achievement p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.light-mode .sports h1 {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+.light-mode .achievement {
+    background-color: rgba(244, 244, 244, 0.8);
+    color: black;
+}
+
+.light-mode .achievement p {
+    color: #666;
+}
+
+.light-mode .achievement:hover {
+    background-color: rgba(221, 221, 221, 0.8);
+}
+
+/* Contact Me Section */
+.contact-me {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10%;
+}
+
+.contact-me h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    gap: 15px;
+}
+
+.contact-me label {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact-me input,
+.contact-me textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-me textarea {
+    resize: vertical;
+}
+
+.contact-me button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-me button:hover {
+    background-color: #555;
+}
+
+.light-mode .contact-me button {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.light-mode .contact-me button:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.light-mode footer {
+    background-color: #f4f4f4;
+    color: black;
+}

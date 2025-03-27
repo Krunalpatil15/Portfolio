@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <h1>Welcome To My Portfolio</h1>
+        <div class="page2">
+            <h3><a href="#home">Home</a></h3>
+            <h3><a href="#projects">Projects</a></h3>
+            <h3><a href="#education">Education</a></h3>
+            <h3><a href="#skills">Skills</a></h3>
+            <h3><a href="#sports">Sports</a></h3>
+            <h3><a href="#contact-me">Contact Me</a></h3>
+            
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div class="home" id="home">
+        <div class="image">
+            <img src="my.jpg" class="MyImage" alt="My Image">
+        </div>
+        <div class="lines">
+            <div class="line1">
+                <h2>Hello! I'm Krunal Patil</h2>
+            </div>
+            <p class="intro">
+                I'm an MCA student with a passion for Frontend Development, eager to learn, solve problems creatively, and grow in the tech world. 
+                I'm also a national-level handball player.
+            </p>
+        </div>
+        <div class="btn">
+            <button class="mybtn">View Skills</button>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+        <h1>Some Of My Recent Projects</h1>
+        <div class="boxes">
+            <div class="box">
+                <img src="Portfolio.png" class="Portfolio" alt="Portfolio Project">
+                <h3>Portfolio Website</h3>
+                <h2><a href="#">Check It Out</a></h2>
+            </div>
+            <div class="box">
+                <img src="TTMS.png" class="Travel and Tourism" alt="Travel & Tourism Project">
+                <h3>Travel & Tourism Management System</h3>
+                <h2><a href="#">Check It Out</a></h2> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="education" id="education">
+        <h1>10th To Post-Graduation</h1>
+        <div class="boxes">
+            <div class="box">
+                <img src="ssc.JPG" class="10th" alt="10th Grade">
+                <h3>Shree Samarth School, Palus</h3>
+                <h4>SSC - 77.40%</h4>
+            </div>
+            <div class="box">
+                <img src="HSC.jpg" class="12th" alt="12th Grade">
+                <h3>LKVP Junior and Senior College, Palus</h3>
+                <h4>HSC - 62.00%</h4> 
+            </div>
+            <div class="box">
+                <img src="BSC.jpg" class="Graduation" alt="Graduation">
+                <h3>Arts, Commerce & Science College, Palus</h3>
+                <h4>Bsc (Chemistry)- 8.54 CGPA</h4> 
+            </div>
+            <div class="box">
+                <img src="MCA.jpg" class="Post-Graduation" alt="Post-Graduation">
+                <h3>Institute of Management and Rural Development Administration, Sangli</h3>
+                <h4>MCA (1yr)- 8.54 CGPA</h4> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills" id="skills">
+        <h1>Skills</h1>
+        <div class="skill-list">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Java</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sports Achievements Section -->
+    <div class="sports" id="sports">
+        <div class="sports-header">
+            <img src="handball.jpg" alt="Handball Image" class="handball-image">
+            <h1>Sports Achievements</h1>
+        </div>
+        <div class="achievements">
+            <div class="achievement">
+                <h3>West Zone Inter University Handball Tournament</h3>
+                <p>Madhya Pradesh, Participation (2024)</p>
+            </div>
+            <div class="achievement">
+                <h3>National Handball Championship</h3>
+                <p>Delhi, Participation (2021)</p>
+            </div>
+            <div class="achievement">
+                <h3>JR. State Handball Championship</h3>
+                <p>Satara, 3rd Position (2020)</p>
+            </div>
+            <div class="achievement">
+                <h3>School State Handball Championship</h3>
+                <p>Nagpur, 2nd Position (2018)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me Section -->
+    <div class="contact-me" id="contact-me">
+        <h1>Contact Me</h1>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Krunal Patil. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
