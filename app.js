@@ -38,6 +38,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// app.js - Updated to handle View Skills button click
+
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    const viewSkillBtn = document.getElementById('viewSkillBtn');
+    const skillsSection = document.getElementById('skills');
+  
+    if (viewSkillBtn && skillsSection) {
+      viewSkillBtn.addEventListener('click', () => {
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
+  });
+  
+
 
 
 // Home Section Animations
